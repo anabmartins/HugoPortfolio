@@ -1,7 +1,7 @@
 import Image from "next/image"
 import styles from './page.module.css'
 
-export const Home = () => {
+const Home = () => {
     return (
         <>
             <div className={styles.main}>
@@ -12,18 +12,20 @@ export const Home = () => {
                         <span className={styles.desc}>Especialista em <strong>Inclusão e Diversidade</strong> e Acompanhante Terapêutico (AT)</span>
                     </div>
                     <div className={styles.imgSec}>
-                        <Image src="/perfil1.png" 
-                        width={350}
-                        height={350}
-                        alt="profile" />
+                        <Image src="/perfil1.png"
+                            width={340}
+                            height={340}
+                            alt="profile" />
                     </div>
-                        <Image src="/ep_arrow-up-bold.svg" 
-                        width={40}
-                        height={40}
-                        className={styles.arrowdown}
-                        alt="seta" />
                 </div>
+                <Image src="/ep_arrow-up-bold.svg"
+                    width={50}
+                    height={50}
+                    className={styles.arrowdown}
+                    alt="seta" />
             </div>
         </>
     )
 }
+
+export default Home;
