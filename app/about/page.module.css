@@ -1,0 +1,17 @@
+.main{
+    padding: 5rem 7rem;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.title {
+    color: #669ED5;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+}
+.text{
+    color: #4E4E4E;
+    font-size: 1.45rem;
+    margin: 2rem 0rem;
+}

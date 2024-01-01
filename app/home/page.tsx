@@ -1,7 +1,36 @@
+'use client'
 import Image from "next/image"
 import styles from './page.module.css'
+import React, { useState, useEffect } from 'react';
 
 const Home = () => {
+
+    const [isExpanded, setExpanded] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            // Define uma altura de referência (ajuste conforme necessário)
+            const triggerHeight = 300;
+
+            // Verifica se o scroll atingiu a altura de referência para expandir o card
+            if (scrollY > triggerHeight && !isExpanded) {
+                setExpanded(true);
+            } else if (scrollY <= triggerHeight && isExpanded) {
+                setExpanded(false);
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+
+        // Remove o listener ao desmontar o componente
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [isExpanded]);
+
+    console.log(isExpanded);
+    
+
     return (
         <>
             <div className={styles.main}>
