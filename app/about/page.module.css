@@ -1,17 +1,32 @@
-.main{
-    padding: 5rem 7rem;
-    display: flex;
-    align-items: center;
-    height: 100vh;
+.main {
+  padding: 5rem 7rem;
+  display: flex;
+  align-items: center;
+  height: 80vh;
 }
 .title {
-    color: #669ED5;
-    font-size: 3rem;
-    font-style: normal;
-    font-weight: 700;
+  color: #669ed5;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
 }
-.text{
-    color: #4E4E4E;
-    font-size: 1.45rem;
-    margin: 2rem 0rem;
+.text {
+  color: #4e4e4e;
+  font-size: 1.45rem;
+  margin: 4rem 0rem;
+  width: 70%;
+}
+.altTitle {
+  color: #074787;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  width: 40%;
+}
+.subtitle {
+  color: #669ed5;
+  width: 40%;
+  font-size: 1.5rem;
+  margin: 1rem 0rem;
+  font-weight: 400;
 }

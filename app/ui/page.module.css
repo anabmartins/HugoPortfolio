@@ -1,0 +1,30 @@
+.header {
+  background-color: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 2rem 8rem; */
+  width: 100%;
+  position: absolute;
+}
+.name {
+  padding: 2rem 8rem;
+  color: #0d65bd;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 8rem;
+  gap: 2rem;
+  color: #0d65bd;
+  font-size: 1.2rem;
+}
+.contact {
+  color: #ffffff;
+  padding: .5rem 2rem;
+  border-radius: 5px;
+  background: rgba(13, 101, 189, 0.63);
+}
